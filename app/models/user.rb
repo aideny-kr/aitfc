@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   end
 
   has_one :story
-
+  has_many :social_connections
   before_create :ensure_story_exists
 
   def ensure_story_exists

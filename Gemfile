@@ -26,7 +26,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
-
+gem "koala", "~> 1.8.0rc1"
+gem 'sidekiq'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -72,6 +73,7 @@ group :test do
   gem "forgery"
   gem "launchy"
   gem "database_cleaner"
+  gem 'mocha', :require => 'mocha/api'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
