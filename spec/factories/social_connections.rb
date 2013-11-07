@@ -2,8 +2,11 @@
 
 FactoryGirl.define do
   factory :social_connection do
-    user "MyString"
+    user_id 1
+    
     provider "MyString"
     uid 1
+    follows true
+   	follower true
   end
 end

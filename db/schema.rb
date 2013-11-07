@@ -39,7 +39,10 @@ ActiveRecord::Schema.define(version: 20131105002811) do
   create_table "social_connections", force: true do |t|
     t.string   "provider"
     t.string   "uid"
-    t.integer  "user_id"
+    t.integer  "user_id",    null: false
+    t.string   "user"
+    t.boolean  "follows"
+    t.boolean  "follower"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

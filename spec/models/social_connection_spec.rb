@@ -6,7 +6,7 @@ describe SocialConnection do
     subject{ build(:social_connection) }
     it{ should be_valid }
     it "should require a user" do
-      build(:social_connection, user: nil).should_not be_valid
+      build(:social_connection, user_id: nil).should_not be_valid
     end
     it "should require a provider" do
       build(:social_connection, provider: nil).should_not be_valid
